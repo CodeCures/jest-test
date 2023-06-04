@@ -1,0 +1,16 @@
+{
+  "name": "jest-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --maxWorkers=4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "ts-jest": "^29.1.0"
+  }
+}
