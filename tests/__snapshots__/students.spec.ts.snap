@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Students matches student records 1`] = `
+[
+  User {
+    "firstName": "Courage",
+    "lastName": "Francis",
+  },
+  User {
+    "firstName": "Foo",
+    "lastName": "Bar",
+  },
+]
+`;

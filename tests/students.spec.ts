@@ -17,21 +17,31 @@ describe('Students', () => {
     })
 
     it('registers more than a user as student', () => {
-        const user1 = new User({
-            firstName: "Courage",
-            lastName: "Francis"
-        });
-
+        
         const user2 = new User({
             firstName: "Foo",
             lastName: "Bar"
         });
 
         const students = new Students;
-        students.addUser(user1)
+        students.addUser(user)
         students.addUser(user2)
 
         expect(students.all).toHaveLength(2);
+    })
+
+    it('matches student records', () => {
+        
+        const user2 = new User({
+            firstName: "Foo",
+            lastName: "Bar"
+        });
+
+        const students = new Students;
+        students.addUser(user)
+        students.addUser(user2)
+
+        expect(students.all).toMatchSnapshot();
     })
 
 
